@@ -1,5 +1,9 @@
-//
-// Created by user on 03/11/15.
-//
-
 #include "Robot.h"
+
+void Robot::rencontrerPlot(Plot p){
+
+
+}
+void Robot::saisir(Objet o){
+
+}

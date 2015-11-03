@@ -1,0 +1,14 @@
+//
+// Created by user on 03/11/15.
+//
+
+#ifndef PROJETROBOT_ROBOTAVIDEFACEPLOT_H
+#define PROJETROBOT_ROBOTAVIDEFACEPLOT_H
+
+
+class RobotAVideFacePlot {
+
+};
+
+
+#endif //PROJETROBOT_ROBOTAVIDEFACEPLOT_H
