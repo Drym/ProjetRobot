@@ -5,7 +5,8 @@
 class EtatRobot {
 
 public:
-    EtatRobot rencontrerPlot();
+    EtatRobot();
+    EtatRobot *rencontrerPlot();
 
 
 };

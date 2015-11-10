@@ -9,6 +9,9 @@ private:
 public:
     int getHauteur();
 
+    //Contructeur
+    Plot(int hauteur): hauteur(hauteur){};
+
 };
 
 

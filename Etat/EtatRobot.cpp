@@ -3,3 +3,10 @@
 //
 
 #include "EtatRobot.h"
+
+using namespace std;
+
+EtatRobot *EtatRobot::rencontrerPlot() {
+    //throw new Exception();
+    return nullptr;
+}

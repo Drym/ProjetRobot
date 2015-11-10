@@ -9,6 +9,9 @@ private:
 public:
     int getPoids();
 
+    //Constructeur
+    Objet(int poids): poids(poids){};
+
 };
 
 
