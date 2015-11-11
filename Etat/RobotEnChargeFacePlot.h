@@ -5,12 +5,20 @@
 #ifndef PROJETROBOT_ROBOTENCHARGEFACEPLOT_H
 #define PROJETROBOT_ROBOTENCHARGEFACEPLOT_H
 
+#include <iostream>
+#include "RobotEnRoute.h"
 
-class RobotEnChargeFacePlot {
+class RobotEnChargeFacePlot : public RobotEnRoute{
+
+private:
+    static RobotEnChargeFacePlot instance;
+
+protected:
+    RobotEnChargeFacePlot():RobotEnRoute(){};
+    virtual ~RobotEnChargeFacePlot() = default;
 
 public:
-
-    RobotEnChargeFacePlot();
+    static RobotEnChargeFacePlot& getInstance();
 
 };
 

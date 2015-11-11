@@ -4,15 +4,23 @@
 
 #ifndef PROJETROBOT_ROBOTAVIDEFACEPLOT_H
 #define PROJETROBOT_ROBOTAVIDEFACEPLOT_H
-#include "EtatRobot.h"
+
+#include <iostream>
+#include "RobotEnRoute.h"
 
 
-class RobotAVideFacePlot {
+class RobotAVideFacePlot : public RobotEnRoute{
+
+private:
+    static RobotAVideFacePlot instance;
+
+protected:
+    RobotAVideFacePlot():RobotEnRoute(){};
+    virtual ~RobotAVideFacePlot() = default;
 
 public:
-
-    RobotAVideFacePlot();
-    EtatRobot *saisir();
+    virtual EtatRobot& saisir();
+    static RobotAVideFacePlot& getInstance();
 
 };
 

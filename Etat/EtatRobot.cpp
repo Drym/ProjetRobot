@@ -3,18 +3,13 @@
 //
 
 #include "EtatRobot.h"
-#include <exception>
-//Pour NULL
-#include <cstddef>
 
 using namespace std;
 
-EtatRobot *EtatRobot::rencontrerPlot() {
-    throw new exception();
-    return NULL;
+EtatRobot& EtatRobot::rencontrerPlot() {
+    throw NoActionDefinedException();
 }
 
-EtatRobot *EtatRobot::saisir() {
-    throw new exception();
-    return NULL;
+EtatRobot& EtatRobot::saisir() {
+    throw NoActionDefinedException();
 }

@@ -5,9 +5,13 @@
 #ifndef PROJETROBOT_ROBOTENROUTE_H
 #define PROJETROBOT_ROBOTENROUTE_H
 
+#include <iostream>
+#include "EtatRobot.h"
 
-class RobotEnRoute {
-
+class RobotEnRoute : public EtatRobot {
+public:
+    RobotEnRoute():EtatRobot(){};
+    virtual ~RobotEnRoute() = default;
 };
 
 

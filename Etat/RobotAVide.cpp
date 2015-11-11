@@ -1,12 +1,17 @@
 //
 // Created by user on 03/11/15.
 //
-
 #include "RobotAVide.h"
-#include "EtatRobot.h"
 #include "RobotAVideFacePlot.h"
 
+using namespace std;
 
-EtatRobot* RobotAVide::renconterPlot() {
-    return RobotAVideFacePlot.instance();
+RobotAVide RobotAVide::instance=RobotAVide();
+
+RobotAVide& RobotAVide::getInstance() {
+    return instance;
+}
+
+EtatRobot& RobotAVide::rencontrerPlot(){
+    return RobotAVideFacePlot::getInstance();
 }

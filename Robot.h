@@ -5,6 +5,7 @@
 #include "Objet.h"
 #include <string>
 #include "Etat/EtatRobot.h"
+#include "Etat/RobotAVide.h"
 
 using namespace std;
 
@@ -14,7 +15,7 @@ private:
     string direction;
     Plot plot;
     Objet objet;
-    EtatRobot *etatRobot;
+    EtatRobot etatRobot;
 
 public:
     void rencontrerPlot(Plot p);
@@ -22,7 +23,8 @@ public:
 
     //Constructeur
     Robot(string direction, Plot plot, Objet objet): direction(direction), plot(plot), objet(objet){
-       /* etatRobot = new EtatRobot(); */ }; //TODO
+        etatRobot = RobotAVide::getInstance();
+    };
 };
 
 

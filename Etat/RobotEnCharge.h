@@ -5,9 +5,19 @@
 #ifndef PROJETROBOT_ROBOTENCHARGE_H
 #define PROJETROBOT_ROBOTENCHARGE_H
 
+#include <iostream>
 
-class RobotEnCharge {
+class RobotEnCharge : public RobotEnRoute{
+private:
+    static RobotEnCharge instance;
 
+protected:
+    RobotEnCharge():RobotEnRoute(){};
+    virtual ~RobotEnCharge() = default;
+
+public:
+    virtual EtatRobot& rencontrerPlot();
+    static RobotEnCharge& getInstance();
 };
 
 
