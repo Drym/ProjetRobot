@@ -4,9 +4,15 @@
 
 #ifndef PROJETROBOT_ROBOTAVIDEFACEPLOT_H
 #define PROJETROBOT_ROBOTAVIDEFACEPLOT_H
+#include "EtatRobot.h"
 
 
 class RobotAVideFacePlot {
+
+public:
+
+    RobotAVideFacePlot();
+    EtatRobot *saisir();
 
 };
 

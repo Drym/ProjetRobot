@@ -1,6 +1,7 @@
 #include "MainRobot.h"
 #include "Robot.h"
 #include "Plot.h"
+#include "Etat/EtatRobot.h"
 
 
 using namespace std;

@@ -7,6 +7,7 @@ class EtatRobot {
 public:
     EtatRobot();
     EtatRobot *rencontrerPlot();
+    EtatRobot *saisir();
 
 
 };

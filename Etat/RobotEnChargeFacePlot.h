@@ -8,6 +8,10 @@
 
 class RobotEnChargeFacePlot {
 
+public:
+
+    RobotEnChargeFacePlot();
+
 };
 
 

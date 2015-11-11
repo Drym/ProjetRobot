@@ -3,3 +3,8 @@
 //
 
 #include "RobotAVideFacePlot.h"
+#include "RobotEnChargeFacePlot.h"
+
+EtatRobot * RobotAVideFacePlot::saisir() {
+    return RobotEnChargeFacePlot.instance();
+}

@@ -3,3 +3,10 @@
 //
 
 #include "RobotAVide.h"
+#include "EtatRobot.h"
+#include "RobotAVideFacePlot.h"
+
+
+EtatRobot* RobotAVide::renconterPlot() {
+    return RobotAVideFacePlot.instance();
+}

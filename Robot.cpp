@@ -19,5 +19,12 @@ void Robot::rencontrerPlot(Plot p){
 }
 void Robot::saisir(Objet o){
 
+    try {
+        etatRobot = etatRobot->saisir();
+        this->objet = o;
+    }
+    catch (exception e) {
+        cerr << e.what();
+    }
 
 }

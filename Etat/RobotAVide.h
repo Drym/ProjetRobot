@@ -4,9 +4,15 @@
 
 #ifndef PROJETROBOT_ROBOTAVIDE_H
 #define PROJETROBOT_ROBOTAVIDE_H
+#include "EtatRobot.h"
 
 
 class RobotAVide {
+
+public:
+
+    RobotAVide();
+    EtatRobot *renconterPlot();
 
 };
 
