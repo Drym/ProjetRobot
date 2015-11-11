@@ -7,9 +7,9 @@
 using namespace std;
 
 EtatRobot& EtatRobot::rencontrerPlot() {
-    throw NoActionDefinedException();
+    throw NoActionDefinedException("rencontrerPlot");
 }
 
 EtatRobot& EtatRobot::saisir() {
-    throw NoActionDefinedException();
+    throw NoActionDefinedException("saisir");
 }

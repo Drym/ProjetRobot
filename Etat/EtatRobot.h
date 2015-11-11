@@ -12,8 +12,13 @@ public:
     virtual EtatRobot& saisir();
 
     class NoActionDefinedException{
+    private:
+        std::string action;
     public:
-        void getMessageError(){ std::cout << "Action impossible à réaliser dans l'état actuel.";}
+        NoActionDefinedException(std::string act):action(act){};
+        void getMessageError(){
+            std::cout << "Action \"" << action << "\" impossible à réaliser dans l'état actuel." << std::endl;
+        }
     };
 };
 

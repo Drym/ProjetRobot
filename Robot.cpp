@@ -13,7 +13,7 @@ void Robot::rencontrerPlot(Plot p){
         this->plot = p;
     }
     catch (EtatRobot::NoActionDefinedException e) {
-
+        e.getMessageError();
     }
 
 }
@@ -24,6 +24,7 @@ void Robot::saisir(Objet o){
         this->objet = o;
     }
     catch (EtatRobot::NoActionDefinedException e) {
+        e.getMessageError();
     }
 
 }
