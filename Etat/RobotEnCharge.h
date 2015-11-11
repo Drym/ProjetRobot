@@ -12,7 +12,7 @@ private:
     static RobotEnCharge instance;
 
 protected:
-    RobotEnCharge():RobotEnRoute(){};
+    RobotEnCharge() = default;
     virtual ~RobotEnCharge() = default;
 
 public:

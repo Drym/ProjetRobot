@@ -12,6 +12,6 @@ RobotEnCharge& RobotEnCharge::getInstance() {
     return instance;
 }
 
-EtatRobot& RobotEnCharge::rencontrerPlot(){
+EtatRobot& RobotEnCharge::rencontrerPlot() {
     return RobotEnChargeFacePlot::getInstance();
 }

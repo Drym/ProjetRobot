@@ -15,7 +15,7 @@ private:
     static RobotAVideFacePlot instance;
 
 protected:
-    RobotAVideFacePlot():RobotEnRoute(){};
+    RobotAVideFacePlot() = default;
     virtual ~RobotAVideFacePlot() = default;
 
 public:

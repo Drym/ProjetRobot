@@ -14,7 +14,7 @@ private:
     static RobotAVide instance;
 
 protected:
-    RobotAVide():RobotEnRoute(){};
+    RobotAVide() = default;
     virtual ~RobotAVide() = default;
 
 public:

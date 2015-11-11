@@ -14,7 +14,7 @@ private:
     static RobotEnChargeFacePlot instance;
 
 protected:
-    RobotEnChargeFacePlot():RobotEnRoute(){};
+    RobotEnChargeFacePlot() = default;
     virtual ~RobotEnChargeFacePlot() = default;
 
 public:

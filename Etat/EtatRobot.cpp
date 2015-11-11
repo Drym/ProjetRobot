@@ -6,7 +6,7 @@
 
 using namespace std;
 
-EtatRobot& EtatRobot::rencontrerPlot() {
+EtatRobot& EtatRobot::rencontrerPlot(){
     throw NoActionDefinedException("rencontrerPlot");
 }
 

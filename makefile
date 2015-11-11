@@ -8,13 +8,13 @@ include default.mk
 
 #-------------------------------------------------
 
-INITIAL_FILES = MainRobot.cpp Robot.cpp Objet.cpp Plot.cpp Etat/EtatRobot.cpp Etat/RobotAVide.cpp Etat/RobotAVideFacePlot.cpp Etat/RobotEnChargeFacePlot.cpp
+INITIAL_FILES = MainRobot.cpp Robot.cpp Objet.cpp Plot.cpp Etat/EtatRobot.cpp Etat/RobotEnRoute.cpp Etat/RobotAVide.cpp Etat/RobotAVideFacePlot.cpp Etat/RobotEnChargeFacePlot.cpp
 ALL = tst_MainRobot
 
 # targets
 
-tst_MainRobot : MainRobot.o Robot.o Objet.o Plot.o Etat/EtatRobot.o Etat/RobotAVide.o Etat/RobotAVideFacePlot.o Etat/RobotEnChargeFacePlot.o
-	$(CXX_LINK) -o tst_MainRobot  MainRobot.o Robot.o Objet.o Plot.o EtatRobot.o RobotAVide.o RobotAVideFacePlot.o RobotEnChargeFacePlot.o
+tst_MainRobot : MainRobot.o Robot.o Objet.o Plot.o Etat/EtatRobot.o Etat/RobotEnRoute.o Etat/RobotAVide.o Etat/RobotAVideFacePlot.o Etat/RobotEnChargeFacePlot.o
+	$(CXX_LINK) -o tst_MainRobot  MainRobot.o Robot.o Objet.o Plot.o EtatRobot.o RobotEnRoute.o RobotAVide.o RobotAVideFacePlot.o RobotEnChargeFacePlot.o
 
 
 dox : $(wildcard *.h *.cpp)

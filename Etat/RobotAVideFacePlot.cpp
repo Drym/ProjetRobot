@@ -12,6 +12,6 @@ RobotAVideFacePlot& RobotAVideFacePlot::getInstance() {
     return instance;
 }
 
-EtatRobot& RobotAVideFacePlot::saisir(){
+EtatRobot& RobotAVideFacePlot::saisir() {
     return RobotEnChargeFacePlot::getInstance();
 }

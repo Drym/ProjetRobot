@@ -12,6 +12,7 @@ RobotAVide& RobotAVide::getInstance() {
     return instance;
 }
 
-EtatRobot& RobotAVide::rencontrerPlot(){
+EtatRobot& RobotAVide::rencontrerPlot() {
+    cout << "YOUPI !!!!" << endl;
     return RobotAVideFacePlot::getInstance();
 }
