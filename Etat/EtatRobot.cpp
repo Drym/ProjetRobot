@@ -10,11 +10,11 @@
 using namespace std;
 
 EtatRobot *EtatRobot::rencontrerPlot() {
-    //throw new Exception();
+    throw new exception();
     return NULL;
 }
 
 EtatRobot *EtatRobot::saisir() {
-    //throw new Exception();
+    throw new exception();
     return NULL;
 }
