@@ -19,8 +19,8 @@ protected:
     virtual ~RobotAVideFacePlot() = default;
 
 public:
-    virtual EtatRobot& saisir();
-    static RobotAVideFacePlot& getInstance();
+    virtual EtatRobot* saisir() const;
+    static RobotAVideFacePlot* getInstance();
 
 };
 

@@ -18,8 +18,8 @@ protected:
     virtual ~RobotAVide() = default;
 
 public:
-    virtual EtatRobot& rencontrerPlot();
-    static RobotAVide& getInstance();
+    virtual EtatRobot* rencontrerPlot() const;
+    static RobotAVide* getInstance();
 
 };
 

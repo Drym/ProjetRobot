@@ -7,6 +7,6 @@ using namespace std;
 
 RobotEnChargeFacePlot RobotEnChargeFacePlot::instance=RobotEnChargeFacePlot();
 
-RobotEnChargeFacePlot& RobotEnChargeFacePlot::getInstance() {
-    return instance;
+RobotEnChargeFacePlot* RobotEnChargeFacePlot::getInstance() {
+    return &instance;
 }

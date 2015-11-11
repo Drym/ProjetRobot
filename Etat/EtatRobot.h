@@ -8,8 +8,8 @@ class EtatRobot {
 public:
     EtatRobot() = default;
     virtual ~EtatRobot() = default;
-    virtual EtatRobot& rencontrerPlot();
-    virtual EtatRobot& saisir();
+    virtual EtatRobot* rencontrerPlot() const;
+    virtual EtatRobot* saisir() const;
 
     class NoActionDefinedException{
     private:

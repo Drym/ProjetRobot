@@ -6,10 +6,10 @@
 
 using namespace std;
 
-EtatRobot& EtatRobot::rencontrerPlot(){
+EtatRobot* EtatRobot::rencontrerPlot() const{
     throw NoActionDefinedException("rencontrerPlot");
 }
 
-EtatRobot& EtatRobot::saisir() {
+EtatRobot* EtatRobot::saisir() const{
     throw NoActionDefinedException("saisir");
 }

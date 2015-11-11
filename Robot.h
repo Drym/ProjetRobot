@@ -15,16 +15,16 @@ private:
     string direction;
     Plot plot;
     Objet objet;
-    EtatRobot etatRobot;
+    EtatRobot* etatRobot;
 
 public:
-    void rencontrerPlot(Plot p);
-    void saisir(Objet o);
-
     //Constructeur
     Robot(string direction, Plot plot, Objet objet): direction(direction), plot(plot), objet(objet){
         etatRobot = RobotAVide::getInstance();
     };
+
+    void rencontrerPlot(Plot p);
+    void saisir(Objet o);
 };
 
 

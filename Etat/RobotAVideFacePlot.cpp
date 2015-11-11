@@ -8,10 +8,10 @@ using namespace std;
 
 RobotAVideFacePlot RobotAVideFacePlot::instance=RobotAVideFacePlot();
 
-RobotAVideFacePlot& RobotAVideFacePlot::getInstance() {
-    return instance;
+RobotAVideFacePlot* RobotAVideFacePlot::getInstance() {
+    return &instance;
 }
 
-EtatRobot& RobotAVideFacePlot::saisir() {
+EtatRobot* RobotAVideFacePlot::saisir() const{
     return RobotEnChargeFacePlot::getInstance();
 }

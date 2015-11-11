@@ -12,9 +12,6 @@ class RobotEnRoute : public EtatRobot {
 public:
     RobotEnRoute() = default;
     virtual ~RobotEnRoute() = default;
-
-    virtual EtatRobot& rencontrerPlot();
-    virtual EtatRobot& saisir();
 };
 
 

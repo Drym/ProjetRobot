@@ -18,7 +18,7 @@ protected:
     virtual ~RobotEnChargeFacePlot() = default;
 
 public:
-    static RobotEnChargeFacePlot& getInstance();
+    static RobotEnChargeFacePlot* getInstance();
 
 };
 

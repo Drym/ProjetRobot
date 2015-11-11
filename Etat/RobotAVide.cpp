@@ -8,11 +8,10 @@ using namespace std;
 
 RobotAVide RobotAVide::instance=RobotAVide();
 
-RobotAVide& RobotAVide::getInstance() {
-    return instance;
+RobotAVide* RobotAVide::getInstance() {
+    return &instance;
 }
 
-EtatRobot& RobotAVide::rencontrerPlot() {
-    cout << "YOUPI !!!!" << endl;
+EtatRobot* RobotAVide::rencontrerPlot() const{
     return RobotAVideFacePlot::getInstance();
 }

@@ -9,7 +9,7 @@ void Robot::rencontrerPlot(Plot p){
 
 
     try {
-        etatRobot = etatRobot.rencontrerPlot();
+        etatRobot = etatRobot->rencontrerPlot();
         this->plot = p;
     }
     catch (EtatRobot::NoActionDefinedException e) {
@@ -20,7 +20,7 @@ void Robot::rencontrerPlot(Plot p){
 void Robot::saisir(Objet o){
 
     try {
-        etatRobot = etatRobot.saisir();
+        etatRobot = etatRobot->saisir();
         this->objet = o;
     }
     catch (EtatRobot::NoActionDefinedException e) {

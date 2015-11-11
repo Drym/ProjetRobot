@@ -8,10 +8,10 @@ using namespace std;
 
 RobotEnCharge RobotEnCharge::instance=RobotEnCharge();
 
-RobotEnCharge& RobotEnCharge::getInstance() {
-    return instance;
+RobotEnCharge* RobotEnCharge::getInstance() {
+    return &instance;
 }
 
-EtatRobot& RobotEnCharge::rencontrerPlot() {
+EtatRobot* RobotEnCharge::rencontrerPlot() const{
     return RobotEnChargeFacePlot::getInstance();
 }

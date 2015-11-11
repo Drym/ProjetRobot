@@ -17,8 +17,8 @@ protected:
     virtual ~RobotEnCharge() = default;
 
 public:
-    virtual EtatRobot& rencontrerPlot();
-    static RobotEnCharge& getInstance();
+    virtual EtatRobot* rencontrerPlot() const;
+    static RobotEnCharge* getInstance();
 };
 
 
