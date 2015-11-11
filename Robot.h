@@ -4,14 +4,17 @@
 #include "Plot.h"
 #include "Objet.h"
 #include <string>
+#include <vector>
 #include "Etat/EtatRobot.h"
 #include "Etat/RobotAVide.h"
+#include "Sujet.h"
 
 using namespace std;
 
 
-class Robot {
+class Robot : public Sujet{
 private:
+    vector<Observateur*> observateurs;
     string direction;
     Plot plot;
     Objet objet;
@@ -25,6 +28,10 @@ public:
 
     void rencontrerPlot(Plot p);
     void saisir(Objet o);
+
+    virtual void attacherObservateur(Observateur *obs);
+    virtual void detacherObservateur(Observateur *obs);
+    virtual void notifier();
 };
 
 

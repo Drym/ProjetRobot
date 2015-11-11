@@ -1,5 +1,4 @@
 #include "Robot.h"
-#include <exception>
 #include <iostream>
 #include "Etat/EtatRobot.h"
 
@@ -27,4 +26,18 @@ void Robot::saisir(Objet o){
         e.getMessageError();
     }
 
+}
+
+void Robot::attacherObservateur(Observateur *obs){
+    observateurs.push_back(obs);
+}
+
+void Robot::detacherObservateur(Observateur *obs){
+
+}
+
+void Robot::notifier(){
+    for (int i = 0; i < observateurs.size(); ++i) {
+        observateurs[i]->mettreAJour();
+    }
 }

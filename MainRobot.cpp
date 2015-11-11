@@ -15,5 +15,6 @@ int main() {
     robot.saisir(objet);
     cout << "Pas d'erreur ensuite !!!" << endl;
     robot.rencontrerPlot(plot);
+
     robot.saisir(objet);
 }
