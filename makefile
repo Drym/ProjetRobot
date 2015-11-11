@@ -26,7 +26,7 @@ extra_clean :
 
 extra_initial : $(ALL)
 	tst_MainRobot > tst_MainRobot.out 2>&1
-	cp tst_MVector.out $(INITIAL_DIR)
+	cp tst_MainRobot.out $(INITIAL_DIR)
 	chmod a+r $(INITIAL_DIR)/*.out
 
 #-----------------------------------------------------------------------
