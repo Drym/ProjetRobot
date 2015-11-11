@@ -6,6 +6,7 @@
 #define PROJETROBOT_ROBOTENCHARGE_H
 
 #include <iostream>
+#include "RobotEnRoute.h"
 
 class RobotEnCharge : public RobotEnRoute{
 private:
