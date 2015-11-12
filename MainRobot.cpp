@@ -1,20 +1,21 @@
-#include "Robot.h"
-#include "Plot.h"
-#include "Etat/EtatRobot.h"
-
+#include "Robot/Robot.h"
+#include "Affichage/Afficheur.h"
 
 using namespace std;
 
 int main() {
 
-    Plot plot(10);
-    Objet objet(5);
-    Robot robot("nord", plot, objet);
+    Plot* plot = new Plot(10);
+    Objet* objet = new Objet(5);
+    Position pos(0,0);
+    Robot* robot = new Robot("nord", pos);
+    Observateur* obs = new Afficheur(robot);
+    robot->attacherObservateur(obs);
 
     cout << "Erreur OK : ";
-    robot.saisir(objet);
+    robot->saisir(objet);
     cout << "Pas d'erreur ensuite !!!" << endl;
-    robot.rencontrerPlot(plot);
+    robot->rencontrerPlot(plot);
 
-    robot.saisir(objet);
+    robot->saisir(objet);
 }
