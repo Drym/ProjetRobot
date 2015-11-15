@@ -9,6 +9,7 @@ void Afficheur::mettreAJour() {
     string ordre = sujet->getDernierOrdre();
     Position pos = sujet->getPosition();
 
+    cout << "Message de l'afficheur : " << endl;
     cout << "-----------------------------------------------" << endl;
     cout << "Ordre : " << ordre << endl;
     cout << "Direction : " << dir << endl;

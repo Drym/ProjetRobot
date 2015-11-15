@@ -13,3 +13,7 @@ EtatRobot* EtatRobot::rencontrerPlot() const{
 EtatRobot* EtatRobot::saisir() const{
     throw NoActionDefinedException("saisir");
 }
+
+EtatRobot* EtatRobot::avancer() const{
+    throw NoActionDefinedException("avancer");
+}

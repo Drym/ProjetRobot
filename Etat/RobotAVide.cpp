@@ -15,3 +15,7 @@ RobotAVide* RobotAVide::getInstance() {
 EtatRobot* RobotAVide::rencontrerPlot() const{
     return RobotAVideFacePlot::getInstance();
 }
+
+EtatRobot* RobotAVide::avancer() const{
+    return RobotAVide::getInstance();
+}

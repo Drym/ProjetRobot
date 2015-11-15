@@ -19,6 +19,7 @@ protected:
 
 public:
     virtual EtatRobot* rencontrerPlot() const;
+    virtual EtatRobot* avancer() const;
     static RobotAVide* getInstance();
 
 };

@@ -28,3 +28,17 @@ void Robot::saisir(Objet* o){
     }
 
 }
+
+void Robot::avancer(int x, int y) {
+    try {
+        etatRobot = etatRobot->avancer();
+        position.setX(x);
+        position.setY(y);
+        dernierOrdre = "avancer";
+        notifier();
+    }
+    catch (EtatRobot::NoActionDefinedException e) {
+        e.getMessageError();
+    }
+
+}

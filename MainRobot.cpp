@@ -12,10 +12,22 @@ int main() {
     Observateur* obs = new Afficheur(robot);
     robot->attacherObservateur(obs);
 
-    cout << "Erreur OK : ";
+    cout << endl;
+    cout << "MAIN : Avancer en (5, 5), l'action s'effectue normalement :" << endl;
+    robot->avancer(5,5);
+    cout << endl;
+    cout << "MAIN : Avancer en (7, 7), l'action s'effectue normalement :" << endl;
+    robot->avancer(7,7);
+    cout << endl;
+    cout << "MAIN : Essaye de saisir un objet depuis l'état AVide (l'action ne doit pas s'effectuer) : " << endl;
     robot->saisir(objet);
-    cout << "Pas d'erreur ensuite !!!" << endl;
+    cout << endl;
+    cout << "MAIN : Rencontrer un plot, l'action s'effectue normalement :" << endl;
     robot->rencontrerPlot(plot);
-
+    cout << endl;
+    cout << "MAIN : Essaye d'avancer alors qu'il y a un plot en face (l'action ne doit pas s'effectuer) :" << endl;
+    robot->avancer(10,10);
+    cout << endl;
+    cout << "MAIN : Saisir l'objet sur le plot, l'action s'effectue normalement :" << endl;
     robot->saisir(objet);
 }

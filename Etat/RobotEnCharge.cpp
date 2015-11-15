@@ -15,3 +15,7 @@ RobotEnCharge* RobotEnCharge::getInstance() {
 EtatRobot* RobotEnCharge::rencontrerPlot() const{
     return RobotEnChargeFacePlot::getInstance();
 }
+
+EtatRobot* RobotEnCharge::avancer() const{
+    return RobotEnCharge::getInstance();
+}
