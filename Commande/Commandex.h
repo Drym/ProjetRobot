@@ -3,6 +3,7 @@
 
 #include <map>
 #include "Robot/Robot.h"
+#include "Invocateur.h"
 
 using namespace std;
 
@@ -13,10 +14,10 @@ private:
 
 protected:
     Robot* robot;
-    virtual Commandex* constructeurVirtuel() = 0;
+    virtual Commandex* constructeurVirtuel(Invocateur*) = 0;
 
 public:
-    static Commandex* nouvelleCmd(string s);
+    static Commandex* nouvelleCmd(string s, Invocateur* invocateur);
     virtual void execute() = 0;
 
 

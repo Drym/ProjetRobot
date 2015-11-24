@@ -1,6 +1,6 @@
 #include "CmdSaisir.h"
 
-Commandex* CmdSaisir::constructeurVirtuel() {
+Commandex* CmdSaisir::constructeurVirtuel(Invocateur* invocateur) {
     return new CmdSaisir();
 }
 

@@ -1,6 +1,7 @@
 #include "CmdAvancer.h"
 
-Commandex* CmdAvancer::constructeurVirtuel() {
+Commandex* CmdAvancer::constructeurVirtuel(Invocateur* invocateur) {
+    x =
     return new CmdAvancer();
 }
 

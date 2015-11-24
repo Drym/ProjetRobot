@@ -1,6 +1,6 @@
 #include "CmdTourner.h"
 
-Commandex* CmdTourner::constructeurVirtuel() {
+Commandex* CmdTourner::constructeurVirtuel(Invocateur* invocateur) {
     return new CmdTourner();
 }
 

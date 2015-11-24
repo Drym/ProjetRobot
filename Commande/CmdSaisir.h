@@ -12,7 +12,7 @@ private:
     Objet* o;
 
 protected:
-    Commandex* constructeurVirtuel();
+    Commandex* constructeurVirtuel(Invocateur*);
 
 public:
     void execute();

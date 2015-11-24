@@ -9,7 +9,7 @@ private:
     string direction;
 
 protected:
-    Commandex* constructeurVirtuel();
+    Commandex* constructeurVirtuel(Invocateur*);
 
 public:
     void execute();

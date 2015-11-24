@@ -5,6 +5,6 @@ map<string, Commandex*>& Commandex::cmdInscrites(){
     return *commandesInscrites;
 }
 
-Commandex* Commandex::nouvelleCmd(string s) {
-    return cmdInscrites()[s]->constructeurVirtuel();
+Commandex* Commandex::nouvelleCmd(string s, Invocateur* invocateur) {
+    return cmdInscrites()[s]->constructeurVirtuel(invocateur);
 }

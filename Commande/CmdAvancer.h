@@ -10,7 +10,7 @@ private:
     int y;
 
 protected:
-    Commandex* constructeurVirtuel();
+    Commandex* constructeurVirtuel(Invocateur*);
 
 public:
     void execute();

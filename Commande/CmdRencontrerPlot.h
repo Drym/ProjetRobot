@@ -10,7 +10,7 @@ private:
     Plot* p;
 
 protected:
-    Commandex* constructeurVirtuel();
+    Commandex* constructeurVirtuel(Invocateur*);
 
 public:
     void execute();

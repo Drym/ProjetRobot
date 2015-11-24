@@ -1,7 +1,7 @@
 #include "CmdRencontrerPlot.h"
 
 
-Commandex* CmdRencontrerPlot::constructeurVirtuel() {
+Commandex* CmdRencontrerPlot::constructeurVirtuel(Invocateur* invocateur) {
     return new CmdRencontrerPlot();
 }
 
