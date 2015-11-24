@@ -1,8 +1,6 @@
 #ifndef UML_CMDAVANCER_H
 #define UML_CMDAVANCER_H
 
-#endif //UML_CMDAVANCER_H
-
 #include "Commandex.h"
 
 class CmdAvancer : public Commandex {
@@ -17,3 +15,6 @@ public:
     virtual void execute();
 
 };
+
+
+#endif //UML_CMDAVANCER_H
