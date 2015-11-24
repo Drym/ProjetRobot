@@ -32,6 +32,7 @@ public:
     void rencontrerPlot(Plot* p);
     void saisir(Objet* o);
     void avancer(int x, int y);
+    void tourner(string direction);
 
     Position getPosition(){ return position;};
     string getDirection(){ return direction;};

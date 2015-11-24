@@ -42,3 +42,16 @@ void Robot::avancer(int x, int y) {
     }
 
 }
+
+void Robot::tourner(string direction) {
+    try {
+        etatRobot = etatRobot->tourner();
+        this->direction = direction;
+        dernierOrdre = "tourner";
+        notifier();
+    }
+    catch (EtatRobot::NoActionDefinedException e) {
+        e.getMessageError();
+    }
+
+}

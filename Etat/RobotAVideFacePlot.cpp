@@ -15,3 +15,7 @@ RobotAVideFacePlot* RobotAVideFacePlot::getInstance() {
 EtatRobot* RobotAVideFacePlot::saisir() const{
     return RobotEnChargeFacePlot::getInstance();
 }
+
+EtatRobot* RobotAVideFacePlot::tourner() const{
+    return RobotAVideFacePlot::getInstance();
+}

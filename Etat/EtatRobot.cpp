@@ -17,3 +17,7 @@ EtatRobot* EtatRobot::saisir() const{
 EtatRobot* EtatRobot::avancer() const{
     throw NoActionDefinedException("avancer");
 }
+
+EtatRobot* EtatRobot::tourner() const{
+    throw NoActionDefinedException("tourner");
+}

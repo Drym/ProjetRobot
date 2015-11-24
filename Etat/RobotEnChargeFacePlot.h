@@ -19,6 +19,7 @@ protected:
 
 public:
     static RobotEnChargeFacePlot* getInstance();
+    virtual EtatRobot* tourner() const;
 
 };
 

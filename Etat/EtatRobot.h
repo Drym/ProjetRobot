@@ -11,6 +11,7 @@ public:
     virtual EtatRobot* rencontrerPlot() const;
     virtual EtatRobot* saisir() const;
     virtual EtatRobot* avancer() const;
+    virtual EtatRobot* tourner() const;
 
     class NoActionDefinedException{
     private:

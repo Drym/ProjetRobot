@@ -19,3 +19,7 @@ EtatRobot* RobotEnCharge::rencontrerPlot() const{
 EtatRobot* RobotEnCharge::avancer() const{
     return RobotEnCharge::getInstance();
 }
+
+EtatRobot* RobotEnCharge::tourner() const{
+    return RobotEnCharge::getInstance();
+}

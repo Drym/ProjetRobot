@@ -10,3 +10,7 @@ RobotEnChargeFacePlot RobotEnChargeFacePlot::instance=RobotEnChargeFacePlot();
 RobotEnChargeFacePlot* RobotEnChargeFacePlot::getInstance() {
     return &instance;
 }
+
+EtatRobot* RobotEnChargeFacePlot::tourner() const{
+    return RobotEnChargeFacePlot::getInstance();
+}

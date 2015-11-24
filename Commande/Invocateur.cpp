@@ -3,12 +3,11 @@
 
 void Invocateur::lireCommande() {
 
-    string s = "zosizjf";
+    string s;
 
-    //TODO lire en entrée
-    while (true) {
-        cmd = Commandex::nouvelleCmd(s);
-        cmd->execute();
-    }
+    cout << "Entrez votre commande" << endl;
+    cin >> s; //getstring
 
+    cmd = Commandex::nouvelleCmd(s);
+    cmd->execute();
 }

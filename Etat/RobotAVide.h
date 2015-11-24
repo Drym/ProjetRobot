@@ -1,7 +1,3 @@
-//
-// Created by user on 03/11/15.
-//
-
 #ifndef PROJETROBOT_ROBOTAVIDE_H
 #define PROJETROBOT_ROBOTAVIDE_H
 
@@ -20,6 +16,7 @@ protected:
 public:
     virtual EtatRobot* rencontrerPlot() const;
     virtual EtatRobot* avancer() const;
+    virtual EtatRobot* tourner() const;
     static RobotAVide* getInstance();
 
 };

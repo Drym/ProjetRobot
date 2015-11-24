@@ -20,6 +20,7 @@ protected:
 
 public:
     virtual EtatRobot* saisir() const;
+    virtual EtatRobot* tourner() const;
     static RobotAVideFacePlot* getInstance();
 
 };

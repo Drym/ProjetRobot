@@ -13,10 +13,12 @@ int main() {
     Observateur* obs = new Afficheur(robot);
     robot->attacherObservateur(obs);
 
+    /*
     Invocateur* invoc = new Invocateur();
     invoc->lireCommande();
+    */
 
-    /*cout << endl;
+    cout << endl;
     cout << "MAIN : Avancer en (5, 5), l'action s'effectue normalement :" << endl;
     robot->avancer(5,5);
     cout << endl;
@@ -33,5 +35,11 @@ int main() {
     robot->avancer(10,10);
     cout << endl;
     cout << "MAIN : Saisir l'objet sur le plot, l'action s'effectue normalement :" << endl;
-    robot->saisir(objet);*/
+    robot->saisir(objet);
+    cout << endl;
+    cout << "MAIN : touner :" << endl;
+    robot->tourner("E");
+    robot->tourner("O");
+
+
 }
