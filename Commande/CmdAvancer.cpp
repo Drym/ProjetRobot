@@ -1,5 +1,4 @@
 #include "CmdAvancer.h"
-#include "Commandex.h"
 
 Commandex* CmdAvancer::constructeurVirtuel() {
     return new CmdAvancer();

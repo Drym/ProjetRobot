@@ -1,7 +1,10 @@
 #include "Commandex.h"
 
-static Commandex* Commandex::nouvelleCmd(string s) {
-    return cmdInscrites()[s]->constructeurVirtuel();
+map<string, Commandex*>& Commandex::cmdInscrites(){
+    static map<string, Commandex*>* commandesInscrites = new map<string, Commandex*>();
+    return *commandesInscrites;
 }
 
-virtual Commandex* Commandex::constructeurVirtuel() = 0;
+Commandex* Commandex::nouvelleCmd(string s) {
+    return cmdInscrites()[s]->constructeurVirtuel();
+}

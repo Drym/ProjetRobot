@@ -1,14 +1,14 @@
 #include "Invocateur.h"
 #include <string>
 
-void Invocateur::inscrireCommandes() {
+void Invocateur::lireCommande() {
 
-    string s;
+    string s = "zosizjf";
 
     //TODO lire en entrée
-    while (s = "Je sais pas quoi faire ici pour lire en entrée, c'est la merde !") {
+    while (true) {
         cmd = Commandex::nouvelleCmd(s);
-        cmd.execute();
+        cmd->execute();
     }
 
 }

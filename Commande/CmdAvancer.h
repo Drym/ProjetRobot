@@ -9,10 +9,11 @@ private:
     int x;
     int y;
 
+protected:
     Commandex* constructeurVirtuel();
 
 public:
-    virtual void execute();
+    void execute();
 
 };
 

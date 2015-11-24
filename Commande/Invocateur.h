@@ -1,13 +1,14 @@
 #ifndef UML_INVOCATEUR_H
 #define UML_INVOCATEUR_H
 
+#include "Commandex.h"
 
 class Invocateur {
 
 public:
-    Commandex cmd;
+    Commandex* cmd;
 
-    void inscrireCommandes();
+    void lireCommande();
 };
 
 #endif //UML_INVOCATEUR_H

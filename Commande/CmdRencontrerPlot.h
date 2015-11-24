@@ -8,10 +8,12 @@ class CmdRencontrerPlot : public Commandex {
 
 private:
     Plot* p;
+
+protected:
     Commandex* constructeurVirtuel();
 
 public:
-    virtual void execute();
+    void execute();
 
 };
 

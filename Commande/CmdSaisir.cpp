@@ -1,5 +1,4 @@
 #include "CmdSaisir.h"
-#include "Commandex.h"
 
 Commandex* CmdSaisir::constructeurVirtuel() {
     return new CmdSaisir();

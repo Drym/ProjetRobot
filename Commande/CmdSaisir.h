@@ -10,10 +10,12 @@ class CmdSaisir : public Commandex {
 
 private:
     Objet* o;
+
+protected:
     Commandex* constructeurVirtuel();
 
 public:
-    virtual void execute();
+    void execute();
 
 };
 

@@ -9,15 +9,15 @@ using namespace std;
 class Commandex {
 
 private:
-    map<string, Commandex*> cmdInscrites;
+    static map<string, Commandex*>& cmdInscrites();
 
 protected:
     Robot* robot;
-    Commandex* constructeurVirtuel();
+    virtual Commandex* constructeurVirtuel() = 0;
 
 public:
     static Commandex* nouvelleCmd(string s);
-    void execute();
+    virtual void execute() = 0;
 
 
 };

@@ -1,5 +1,6 @@
 #include "Robot/Robot.h"
 #include "Affichage/Afficheur.h"
+#include "Commande/Invocateur.h"
 
 using namespace std;
 
@@ -12,7 +13,10 @@ int main() {
     Observateur* obs = new Afficheur(robot);
     robot->attacherObservateur(obs);
 
-    cout << endl;
+    Invocateur* invoc = new Invocateur();
+    invoc->lireCommande();
+
+    /*cout << endl;
     cout << "MAIN : Avancer en (5, 5), l'action s'effectue normalement :" << endl;
     robot->avancer(5,5);
     cout << endl;
@@ -29,5 +33,5 @@ int main() {
     robot->avancer(10,10);
     cout << endl;
     cout << "MAIN : Saisir l'objet sur le plot, l'action s'effectue normalement :" << endl;
-    robot->saisir(objet);
+    robot->saisir(objet);*/
 }
