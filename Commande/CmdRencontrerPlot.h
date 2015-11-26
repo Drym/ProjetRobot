@@ -8,11 +8,13 @@ class CmdRencontrerPlot : public Commandex {
 
 private:
     Plot* p;
+    static CmdRencontrerPlot instance;
 
 protected:
     Commandex* constructeurVirtuel(Invocateur*);
 
 public:
+    CmdRencontrerPlot() : Commandex("rencontrerplot"){}
     void execute();
 
 };

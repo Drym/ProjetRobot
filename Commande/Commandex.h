@@ -17,6 +17,7 @@ protected:
     virtual Commandex* constructeurVirtuel(Invocateur*) = 0;
 
 public:
+    Commandex(string c);
     static Commandex* nouvelleCmd(string s, Invocateur* invocateur);
     virtual void execute() = 0;
 

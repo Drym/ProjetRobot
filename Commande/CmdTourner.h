@@ -7,11 +7,13 @@ class CmdTourner : public Commandex {
 
 private:
     string direction;
+    static CmdTourner instance;
 
 protected:
     Commandex* constructeurVirtuel(Invocateur*);
 
 public:
+    CmdTourner() : Commandex("tourner"){}
     void execute();
 
 };

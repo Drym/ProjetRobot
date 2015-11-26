@@ -10,11 +10,13 @@ class CmdSaisir : public Commandex {
 
 private:
     Objet* o;
+    static CmdSaisir instance;
 
 protected:
     Commandex* constructeurVirtuel(Invocateur*);
 
 public:
+    CmdSaisir() : Commandex("saisir"){}
     void execute();
 
 };

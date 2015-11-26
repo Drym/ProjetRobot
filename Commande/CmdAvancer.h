@@ -8,11 +8,13 @@ class CmdAvancer : public Commandex {
 private:
     int x;
     int y;
+    static CmdAvancer instance;
 
 protected:
     Commandex* constructeurVirtuel(Invocateur*);
 
 public:
+    CmdAvancer() : Commandex("avancer"){}
     void execute();
 
 };
