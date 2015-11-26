@@ -17,7 +17,7 @@ protected:
 
 public:
     CmdSaisir() : Commandex("saisir"){}
-    void execute();
+    void execute(Robot* robot);
 
 };
 

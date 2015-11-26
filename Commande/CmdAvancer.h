@@ -6,16 +6,16 @@
 class CmdAvancer : public Commandex {
 
 private:
-    int x;
-    int y;
+    int _x;
+    int _y;
     static CmdAvancer instance;
 
 protected:
     Commandex* constructeurVirtuel(Invocateur*);
 
 public:
-    CmdAvancer() : Commandex("avancer"){}
-    void execute();
+    CmdAvancer(int x=0, int y=0) : Commandex("avancer"), _x(x), _y(y){}
+    void execute(Robot* robot);
 
 };
 

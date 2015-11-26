@@ -14,7 +14,7 @@ bool Invocateur::lireCommande() {
         return false;
 
     Commandex* cmd = Commandex::nouvelleCmd(s, this);
-    cmd->execute();
+    cmd->execute(robot);
 
 
     return true;
@@ -22,14 +22,14 @@ bool Invocateur::lireCommande() {
 
 int Invocateur::getInt(){
     string s;
-
+    cout << "-> Veuillez entrer un entier :" << endl;
     getline(cin, s);
     return stoi(s);
 }
 
 string Invocateur::getString(){
     string s;
-
+    cout << "-> Veuillez entrer une chaine de caractères :" << endl;
     getline(cin, s);
     return s;
 }

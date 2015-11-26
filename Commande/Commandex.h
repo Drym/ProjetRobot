@@ -13,13 +13,12 @@ private:
     static map<string, Commandex*>& cmdInscrites();
 
 protected:
-    Robot* robot;
     virtual Commandex* constructeurVirtuel(Invocateur*) = 0;
 
 public:
     Commandex(string c);
     static Commandex* nouvelleCmd(string s, Invocateur* invocateur);
-    virtual void execute() = 0;
+    virtual void execute(Robot* robot) = 0;
 
 
 };

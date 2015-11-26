@@ -15,7 +15,7 @@ protected:
 
 public:
     CmdRencontrerPlot() : Commandex("rencontrerplot"){}
-    void execute();
+    void execute(Robot* robot);
 
 };
 

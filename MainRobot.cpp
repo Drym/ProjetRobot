@@ -13,7 +13,6 @@ int main() {
     Observateur* obs = new Afficheur(robot);
     robot->attacherObservateur(obs);
 
-
     Invocateur* invoc = new Invocateur(robot);
 
     while(invoc->lireCommande());

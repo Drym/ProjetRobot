@@ -3,11 +3,10 @@
 CmdRencontrerPlot CmdRencontrerPlot::instance = CmdRencontrerPlot();
 
 Commandex* CmdRencontrerPlot::constructeurVirtuel(Invocateur* invocateur) {
-    robot = invocateur->getRobot();
     return new CmdRencontrerPlot();
 }
 
-void CmdRencontrerPlot::execute() {
+void CmdRencontrerPlot::execute(Robot* robot) {
     robot->rencontrerPlot(p);
 }
 

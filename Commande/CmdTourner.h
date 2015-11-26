@@ -13,8 +13,8 @@ protected:
     Commandex* constructeurVirtuel(Invocateur*);
 
 public:
-    CmdTourner() : Commandex("tourner"){}
-    void execute();
+    CmdTourner(string dir = "nord") : Commandex("tourner"), direction(dir){}
+    void execute(Robot* robot);
 
 };
 

@@ -3,12 +3,12 @@
 CmdAvancer CmdAvancer::instance = CmdAvancer();
 
 Commandex* CmdAvancer::constructeurVirtuel(Invocateur* invocateur) {
-    x = invocateur->getInt();
-    y = invocateur->getInt();
-    robot = invocateur->getRobot();
-    return new CmdAvancer();
+    int x = invocateur->getInt();
+    int y = invocateur->getInt();
+    cout << "x : " << x << " ; y : " << y << endl;
+    return new CmdAvancer(x, y);
 }
 
-void CmdAvancer::execute() {
-    robot->avancer(x, y);
+void CmdAvancer::execute(Robot* robot) {
+    robot->avancer(_x, _y);
 }

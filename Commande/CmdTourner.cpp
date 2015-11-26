@@ -3,10 +3,10 @@
 CmdTourner CmdTourner::instance = CmdTourner();
 
 Commandex* CmdTourner::constructeurVirtuel(Invocateur* invocateur) {
-    robot = invocateur->getRobot();
-    return new CmdTourner();
+    string dir = invocateur->getString();
+    return new CmdTourner(dir);
 }
 
-void CmdTourner::execute() {
+void CmdTourner::execute(Robot* robot) {
     robot->tourner(direction);
 }
