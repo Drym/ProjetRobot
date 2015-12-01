@@ -17,5 +17,5 @@ extra_clean :
 # Local dependencies
 #-----------------------------------------------------------------------
 
-CommandeRobot.o : Commande/CmdSaisir.h Commande/CmdAvancer.h Commande/CmdRencontrerPlot.h Commande/CmdTourner.h
+CommandeRobot.o : Commande/CmdSaisir.h Commande/CmdAvancer.h Commande/CmdRencontrerPlot.h Commande/CmdTourner.h Commande/CmdDesexecuter.h
 Robot.o : Robot/Objet.h Robot/Plot.h Robot/Position.h
