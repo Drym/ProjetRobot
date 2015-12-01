@@ -14,7 +14,8 @@ bool Invocateur::lireCommande() {
         return false;
 
     Commandex* cmd = Commandex::nouvelleCmd(s, this);
-    cmd->execute(robot);
+    cmd->setRobot(robot);
+    cmd->execute();
 
 
     return true;

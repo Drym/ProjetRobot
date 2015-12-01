@@ -7,6 +7,6 @@ Commandex* CmdTourner::constructeurVirtuel(Invocateur* invocateur) {
     return new CmdTourner(dir);
 }
 
-void CmdTourner::execute(Robot* robot) {
-    robot->tourner(direction);
+void CmdTourner::execute() {
+    _robot->tourner(direction);
 }

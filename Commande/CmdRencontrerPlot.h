@@ -1,10 +1,10 @@
 #ifndef UML_CMDRENCONTRERPLOT_H
 #define UML_CMDRENCONTRERPLOT_H
 
-#include "Commandex.h"
+#include "CommandeRobot.h"
 #include "Robot/Plot.h"
 
-class CmdRencontrerPlot : public Commandex {
+class CmdRencontrerPlot : public CommandeRobot {
 
 private:
     Plot* p;
@@ -14,8 +14,8 @@ protected:
     Commandex* constructeurVirtuel(Invocateur*);
 
 public:
-    CmdRencontrerPlot() : Commandex("rencontrerplot"){}
-    void execute(Robot* robot);
+    CmdRencontrerPlot() : CommandeRobot("rencontrerplot"){}
+    void execute();
 
 };
 

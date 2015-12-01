@@ -2,11 +2,10 @@
 #define UML_CMDSAISIR_H
 
 
-
-#include "Commandex.h"
+#include "CommandeRobot.h"
 #include "Robot/Objet.h"
 
-class CmdSaisir : public Commandex {
+class CmdSaisir : public CommandeRobot {
 
 private:
     Objet* o;
@@ -16,8 +15,8 @@ protected:
     Commandex* constructeurVirtuel(Invocateur*);
 
 public:
-    CmdSaisir() : Commandex("saisir"){}
-    void execute(Robot* robot);
+    CmdSaisir() : CommandeRobot("saisir"){}
+    void execute();
 
 };
 

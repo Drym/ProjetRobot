@@ -6,7 +6,7 @@ Commandex* CmdSaisir::constructeurVirtuel(Invocateur* invocateur) {
     return new CmdSaisir();
 }
 
-void CmdSaisir::execute(Robot* robot) {
-    robot->saisir(o);
+void CmdSaisir::execute() {
+    _robot->saisir(o);
 }
 

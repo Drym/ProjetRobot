@@ -2,7 +2,6 @@
 #define UML_COMMANDEX_H
 
 #include <map>
-#include "Robot/Robot.h"
 #include "Invocateur.h"
 
 using namespace std;
@@ -18,7 +17,8 @@ protected:
 public:
     Commandex(string c);
     static Commandex* nouvelleCmd(string s, Invocateur* invocateur);
-    virtual void execute(Robot* robot) = 0;
+    virtual void setRobot(Robot* robot) = 0;
+    virtual void execute() = 0;
 
 
 };

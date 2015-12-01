@@ -9,6 +9,6 @@ Commandex* CmdAvancer::constructeurVirtuel(Invocateur* invocateur) {
     return new CmdAvancer(x, y);
 }
 
-void CmdAvancer::execute(Robot* robot) {
-    robot->avancer(_x, _y);
+void CmdAvancer::execute() {
+    _robot->avancer(_x, _y);
 }

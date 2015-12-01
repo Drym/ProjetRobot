@@ -1,9 +1,9 @@
 #ifndef UML_CMDTOURNER_H
 #define UML_CMDTOURNER_H
 
-#include "Commandex.h"
+#include "CommandeRobot.h"
 
-class CmdTourner : public Commandex {
+class CmdTourner : public CommandeRobot {
 
 private:
     string direction;
@@ -13,8 +13,8 @@ protected:
     Commandex* constructeurVirtuel(Invocateur*);
 
 public:
-    CmdTourner(string dir = "nord") : Commandex("tourner"), direction(dir){}
-    void execute(Robot* robot);
+    CmdTourner(string dir = "nord") : CommandeRobot("tourner"), direction(dir){}
+    void execute();
 
 };
 
