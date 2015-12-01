@@ -6,8 +6,8 @@ using namespace std;
 
 int main() {
 
-    Plot* plot = new Plot(10);
-    Objet* objet = new Objet(5);
+    //Plot* plot = new Plot(10);
+    //Objet* objet = new Objet(5);
     Position pos(0,0);
     Robot* robot = new Robot("nord", pos);
     Observateur* obs = new Afficheur(robot);
