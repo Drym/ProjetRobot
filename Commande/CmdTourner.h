@@ -7,6 +7,7 @@ class CmdTourner : public CommandeRobot {
 
 private:
     string direction;
+    string lastDirection;
     static CmdTourner instance;
 
 protected:
@@ -15,6 +16,7 @@ protected:
 public:
     CmdTourner(string dir = "nord") : CommandeRobot("tourner"), direction(dir){}
     void execute();
+    void desexecute();
 
 };
 

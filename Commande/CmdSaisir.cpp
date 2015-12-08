@@ -7,6 +7,10 @@ Commandex* CmdSaisir::constructeurVirtuel(Invocateur* invocateur) {
 }
 
 void CmdSaisir::execute() {
+    cmdStack.push(this);
     _robot->saisir(o);
 }
 
+void CmdSaisir::desexecute(){
+
+}

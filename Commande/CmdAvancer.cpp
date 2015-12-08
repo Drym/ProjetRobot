@@ -10,5 +10,12 @@ Commandex* CmdAvancer::constructeurVirtuel(Invocateur* invocateur) {
 }
 
 void CmdAvancer::execute() {
+    _lastX = _robot->getPosition().getX();
+    _lastY = _robot->getPosition().getY();;
     _robot->avancer(_x, _y);
+    cmdStack.push(this);
+}
+
+void CmdAvancer::desexecute(){
+    _robot->avancer(_lastX, _lastY);
 }

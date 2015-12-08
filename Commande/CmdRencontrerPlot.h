@@ -16,6 +16,7 @@ protected:
 public:
     CmdRencontrerPlot() : CommandeRobot("rencontrerplot"){}
     void execute();
+    void desexecute();
 
 };
 

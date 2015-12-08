@@ -8,5 +8,11 @@ Commandex* CmdTourner::constructeurVirtuel(Invocateur* invocateur) {
 }
 
 void CmdTourner::execute() {
+    lastDirection = _robot->getDirection();
     _robot->tourner(direction);
+    cmdStack.push(this);
+}
+
+void CmdTourner::desexecute(){
+    _robot->tourner(lastDirection);
 }

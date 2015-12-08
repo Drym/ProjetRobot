@@ -14,6 +14,11 @@ bool Invocateur::lireCommande() {
         return false;
 
     Commandex* cmd = Commandex::nouvelleCmd(s, this);
+    if(cmd == nullptr){
+        cout << "Commande inconnue" << endl;
+        return true;
+    }
+
     cmd->setRobot(robot);
     cmd->execute();
 

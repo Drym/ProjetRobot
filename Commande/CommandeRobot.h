@@ -16,6 +16,7 @@ public:
     CommandeRobot(string c) : Commandex(c){}
     void setRobot(Robot* robot){_robot = robot;}
     virtual void execute() = 0;
+    virtual void desexecute() = 0;
 };
 
 #endif //PROJETROBOT_COMMANDEROBOT_H

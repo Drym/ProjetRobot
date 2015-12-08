@@ -17,6 +17,7 @@ protected:
 public:
     CmdSaisir() : CommandeRobot("saisir"){}
     void execute();
+    void desexecute();
 
 };
 
