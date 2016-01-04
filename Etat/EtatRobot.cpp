@@ -14,6 +14,10 @@ EtatRobot* EtatRobot::saisir() const{
     throw NoActionDefinedException("saisir");
 }
 
+EtatRobot* EtatRobot::poser() const{
+    throw NoActionDefinedException("poser");
+}
+
 EtatRobot* EtatRobot::avancer() const{
     throw NoActionDefinedException("avancer");
 }

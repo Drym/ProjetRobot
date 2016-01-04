@@ -7,10 +7,10 @@ Commandex* CmdRencontrerPlot::constructeurVirtuel(Invocateur* invocateur) {
 }
 
 void CmdRencontrerPlot::execute() {
-    cmdStack.push(this);
     _robot->rencontrerPlot(p);
+    cmdStack.push(this);
 }
 
 void CmdRencontrerPlot::desexecute(){
-
+    _robot->tourner(_robot->getDirection());
 }

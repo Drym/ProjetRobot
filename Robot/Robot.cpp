@@ -29,6 +29,20 @@ void Robot::saisir(Objet* o){
 
 }
 
+void Robot::poser(){
+
+    try {
+        etatRobot = etatRobot->poser();
+        this->objet = nullptr;
+        dernierOrdre = "poser";
+        notifier();
+    }
+    catch (EtatRobot::NoActionDefinedException e) {
+        e.getMessageError();
+    }
+
+}
+
 void Robot::avancer(int x, int y) {
     try {
         etatRobot = etatRobot->avancer();

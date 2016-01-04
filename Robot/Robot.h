@@ -31,12 +31,15 @@ public:
 
     void rencontrerPlot(Plot* p);
     void saisir(Objet* o);
+    void poser();
     void avancer(int x, int y);
     void tourner(string direction);
 
-    Position getPosition(){ return position;};
-    string getDirection(){ return direction;};
-    string getDernierOrdre(){ return dernierOrdre;};
+    Position getPosition(){ return position;}
+    string getDirection(){ return direction;}
+    string getDernierOrdre(){ return dernierOrdre;}
+    Plot* getPlot(){ return plot;}
+    Objet* getObjet(){ return objet;}
 };
 
 

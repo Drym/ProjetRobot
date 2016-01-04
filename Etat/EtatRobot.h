@@ -10,6 +10,7 @@ public:
     virtual ~EtatRobot() = default;
     virtual EtatRobot* rencontrerPlot() const;
     virtual EtatRobot* saisir() const;
+    virtual EtatRobot* poser() const;
     virtual EtatRobot* avancer() const;
     virtual EtatRobot* tourner() const;
 

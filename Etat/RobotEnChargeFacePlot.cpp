@@ -1,7 +1,9 @@
 //
 // Created by user on 03/11/15.
 //
+#include "RobotEnCharge.h"
 #include "RobotEnChargeFacePlot.h"
+#include "RobotAVideFacePlot.h"
 
 using namespace std;
 
@@ -12,5 +14,9 @@ RobotEnChargeFacePlot* RobotEnChargeFacePlot::getInstance() {
 }
 
 EtatRobot* RobotEnChargeFacePlot::tourner() const{
-    return RobotEnChargeFacePlot::getInstance();
+    return RobotEnCharge::getInstance();
+}
+
+EtatRobot* RobotEnChargeFacePlot::poser() const{
+    return RobotAVideFacePlot::getInstance();
 }

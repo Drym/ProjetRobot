@@ -12,7 +12,7 @@ ALL = tst_MainRobot
 
 # targets
 
-tst_MainRobot : MainRobot.o Robot/Robot.o Etat/EtatRobot.o Etat/RobotEnRoute.o Etat/RobotAVide.o Etat/RobotAVideFacePlot.o Etat/RobotEnCharge.o Etat/RobotEnChargeFacePlot.o Affichage/Observateur.o Affichage/Sujet.o Affichage/Afficheur.o Commande/CmdAvancer.o Commande/CmdRencontrerPlot.o Commande/CmdSaisir.o Commande/Commandex.o Commande/Invocateur.o Commande/CmdTourner.o Commande/CommandeRobot.o Commande/CmdDesexecuter.o
+tst_MainRobot : MainRobot.o Robot/Robot.o Etat/EtatRobot.o Etat/RobotEnRoute.o Etat/RobotAVide.o Etat/RobotAVideFacePlot.o Etat/RobotEnCharge.o Etat/RobotEnChargeFacePlot.o Affichage/Observateur.o Affichage/Sujet.o Affichage/Afficheur.o Commande/CmdAvancer.o Commande/CmdRencontrerPlot.o Commande/CmdSaisir.o Commande/CmdPoser.o Commande/Commandex.o Commande/Invocateur.o Commande/CmdTourner.o Commande/CommandeRobot.o Commande/CmdDesexecuter.o
 	$(CXX_LINK) -o tst_MainRobot *.o
 
 

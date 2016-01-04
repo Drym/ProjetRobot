@@ -3,6 +3,7 @@
 //
 #include "RobotAVideFacePlot.h"
 #include "RobotEnChargeFacePlot.h"
+#include "RobotAVide.h"
 
 using namespace std;
 
@@ -17,5 +18,5 @@ EtatRobot* RobotAVideFacePlot::saisir() const{
 }
 
 EtatRobot* RobotAVideFacePlot::tourner() const{
-    return RobotAVideFacePlot::getInstance();
+    return RobotAVide::getInstance();
 }

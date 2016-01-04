@@ -7,10 +7,11 @@ Commandex* CmdSaisir::constructeurVirtuel(Invocateur* invocateur) {
 }
 
 void CmdSaisir::execute() {
-    cmdStack.push(this);
     _robot->saisir(o);
+    cmdStack.push(this);
 }
 
 void CmdSaisir::desexecute(){
-
+    _robot->rencontrerPlot(_robot->getPlot());
+    _robot->poser();
 }
